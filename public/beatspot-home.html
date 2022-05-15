@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Spot</title>
+    <meta content="Beat Spot" property="og:title">
+    <meta content="A site that turns a Spotify playlist into a Beat Saber playlist" property="og:description">
+    <meta content="#04CEE0" data-react-helmet="true" name="theme-color">
+    <link rel="icon" href="/images/beatspot.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="What is" class="flex-center flex-column">
+            <h1>What is Beat Spot?</h1>
+            <p>Beat Spot is a tool that converts a Spotify playlist into a Beat Saber playlist. It also has some features like downloading all maps of a certain type (see "Beat Spot Functions").<br><br>
+                <b>API LIMITS</b><br>
+                Due to the Spotify's API limiting, you are allowed to use the <i>Spotify to playlist</i> feature 3 times per 5 minutes.<br><br>
+                Going through all the songs that the tool can go through takes a minute, so please be patient!<br><br>
+                <b>NOTE</b><br>
+                <b>This is not a perfect tool, and I don't claim for it to be.</b><br><br>
+                <b><h2>The tool will take only the first 200 songs of the playlist!</h2></b>
+                <p>Consider buying me a <a href="https://ko-fi.com/stormpacer">coffee</a>, it makes me want to work on more projects!</p>
+            </p>
+        </div>
+        <div id="Options" class="flex-center flex-column">
+                <h1>Beat Spot Functions</h1>
+        </div><br><br><br><br><br><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/spotify">Spotify to
+            playlist</a><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/noodle">Noodle Extensions
+            maps</a><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/chroma">Chroma maps</a><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/cinema">Cinema maps</a><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/curated">Curated maps</a><br><br>
+        <a class="button is-primary is-center is-fullwidth is-responsive is-large" href="/ranked">Ranked maps</a>
+    </div>
+    <style>
+        :root {
+            background-image: url(https://media.discordapp.net/attachments/932259288993370212/974756590454464643/unknown.png);
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 100%;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-top: 100px;
+            -webkit-text-stroke: 4px #000000;
+        }
+
+        h2 {
+            font-size: 48px;            
+        }
+        
+        p {
+            font-size: 30px;
+        }
+
+        .button {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</body>
+
+</html>

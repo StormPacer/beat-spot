@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beat Spot</title>
+    <link rel="icon" href="/images/beatspot.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container is-max-desktop">
+        <div class="columns is-vcentered is-centered">
+            <div class="column is-half">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><input
+                    class="input is-primary is-center is-large" placeholder="Minimum map rating (from 0-1)"
+                    id="minrating" name="minrating" required><br><br><br>
+                <input class="input is-info is-center is-large" placeholder="Name of your bplist" type="text" id="name"
+                    name="name" required><br><br><br><br>
+                <button class="button is-primary is-center is-fullwidth is-responsive is-large" id="button"
+                    onclick="getInput();">Create</button><br><br><br>
+                <a href="beatspot-home.html"><button
+                        class="button is-info is-center is-fullwidth is-responsive is-large"
+                        id="home">Home</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getInput() {
+            const minRating = document.getElementById("minrating").value
+            const name = document.getElementById("name").value
+
+            document.getElementById("button").className = "button is-primary is-center is-fullwidth is-responsive is-disabled is-loading is-large"
+
+            window.open(`/api/chroma?minrating=${minRating}&name=${name}`, "_self")
+        }
+    </script>
+    <style>
+        :root {
+            background-image: url(https://media.discordapp.net/attachments/932259288993370212/974756590454464643/unknown.png);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 100%;
+        }
+    </style>
+</body>
+
+</html>
