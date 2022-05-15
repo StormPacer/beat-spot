@@ -16,3 +16,5 @@ The tool will also take a MAX of 200 songs in a playlist, if you have more in a 
 **Site link: https://stormpacer.me/**
 
 ps. I'm not a good frontend/CSS dev so the site might feel a bit wonky.
+
+Also the backend kinda sucks on this, I made this in like a day.
