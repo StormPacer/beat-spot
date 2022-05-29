@@ -33,9 +33,9 @@
             const minRating = document.getElementById("minrating").value
             const name = document.getElementById("name").value
 
-            document.getElementById("button").className = "button is-primary is-center is-fullwidth is-responsive is-disabled is-loading is-large"
-
             window.open(`/api/ranked?minrating=${minRating}&name=${name}`, "_self")
+
+            alert("Your request has been received. Do not close the page!")
         }
     </script>
     <style>

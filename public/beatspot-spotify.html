@@ -38,9 +38,9 @@
             const id = spotify_id.split("/")
             const playlist = id[4].split("?")
 
-            document.getElementById("button").className = "button is-primary is-center is-fullwidth is-responsive is-disabled is-loading is-large"
-
             window.open(`/api/spotify-to-playlist?minrating=${minRating}&name=${name}&playlist=${playlist[0]}`, "_self")
+
+            alert("Your request has been received. Do not close the page!")
         }
     </script>
     <style>
