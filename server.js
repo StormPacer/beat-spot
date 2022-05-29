@@ -121,7 +121,7 @@ app.get('/api/spotify-to-playlist', limiter, (req, res) => {
             url: "https://accounts.spotify.com/api/token",
             method: "POST",
             headers: {
-                "Authorization": "Basic " + (Buffer.from("51a2fa21b5d24f90b44c1f6d47e3f842:6ad809139f764ca49eeacbfac48c3398").toString("base64"))
+                "Authorization": "Basic " + (Buffer.from("OwOWhat'sThis?").toString("base64"))
             },
             form: {
                 grant_type: 'client_credentials'
